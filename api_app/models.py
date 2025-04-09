@@ -18,6 +18,11 @@ class Artist(models.Model):
     class Meta:
         managed = False
         db_table = 'artist'
+    
+    def __str__(self):
+        artist_name = self.name
+        artist_last_name1 = self.last_name1
+        return f'{artist_name} {artist_last_name1}'
 
 
 class Manga(models.Model):
@@ -27,6 +32,7 @@ class Manga(models.Model):
     editorial = models.CharField(max_length=100)
     artist = models.ForeignKey(Artist, models.DO_NOTHING)
     creation_date = models.DateField()
+    genre = models.CharField(max_length=50, blank=True, null=True)
 
     class Meta:
         managed = False

@@ -1,4 +1,4 @@
-#!/home/linuxlite/Documents/api/venv/bin/python
+#!/home/kali/Documentos/mangas-API/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
