@@ -21,3 +21,6 @@ class ArtistViewSet(viewsets.ModelViewSet):
     """
     queryset = models.Artist.objects.all()
     serializer_class = serializers.ArtistSerializer
+
+def new_manga(request):
+    return render(request, 'api_app/new-manga.html')
