@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <form action="http://localhost:8000/explore/api/mangas-library-v1/mangas/" method="POST"  >
+      {% csrf_token %}
+      <input type="text" name="name" id="name">
+      <input type="text" name="volume" id="name">
+      <input type="text" name="chapters" id="name">
+      <input type="text" name="editorial" id="name">
+      <input type="text" name="creation_date" id="name">
+      <input type="text" name="genre" id="name">
+      <input type="text" name="artist" id="name">
+      <button type="submit">enviar</button>
+    </form>
+  </body>
+</html>
